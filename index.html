@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bethany's Pie Shop</title>
+    <link rel="icon" type="image/x-icon" href="/uwu3/favicon.png" />
+    <style>
+      body {
+        background-image: url('/uwu3/images/pattern.png');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1, h2, h3, h4 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Georgia', serif;
+      }
+
+      h1 {
+        color: rgb(196, 156, 233);
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .centrado {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+        text-align: left;
+        padding: 10px;
+      }
+
+      .img1, .img2, .img3, .img4 {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .betha {
+        margin-left: 0;
+        font-size: 1.2em;
+      }
+
+      .rectangulo {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background-color: rgb(151, 102, 169);
+        z-index: -1; /* Asegura que no cubra otros contenidos */
+      }
+
+      .busqueda {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, 550px);
+        width: calc(100% - 20px);
+        margin: 10px;
+      }
+
+      .ñam {
+        position: absolute;
+        top: 0;
+        left: 33px;
+        transform: translate(0, 500px);
+        font-size: 1.2em;
+      }
+
+      /* Media Queries para adaptar el diseño a pantallas más pequeñas */
+      @media (max-width: 1200px) {
+        .centrado {
+          width: 95%;
+        }
+      }
+
+      @media (max-width: 992px) {
+        h1 {
+          font-size: 2.2em;
+        }
+        .betha {
+          font-size: 1.1em;
+        }
+        .busqueda {
+          transform: translate(0, 500px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2em;
+        }
+
+        .centrado {
+          width: 95%;
+        }
+
+        .rectangulo {
+          height: auto;
+        }
+
+        .busqueda {
+          width: calc(100% - 20px);
+          transform: translate(0, 0);
+        }
+
+        .ñam {
+          font-size: 1em;
+          transform: translate(0, 0);
+        }
+
+        h2, h3, h4 {
+          font-size: 1.5em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.8em;
+        }
+
+        .betha {
+          font-size: 1em;
+        }
+
+        .img1, .img2, .img3, .img4 {
+          width: 100%;
+          margin: 0;
+        }
+
+        .busqueda {
+          width: calc(100% - 20px);
+          margin: 5px;
+        }
+
+        .ñam {
+          font-size: 0.9em;
+        }
+
+        h2, h3, h4 {
+          font-size: 1.2em;
+        }
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      footer address {
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centrado">
+      <article>
+        <h1>Welcome to Bethany's Pie Shop</h1>
+        <img class="img1" src="/uwu3/images/bethany.jpg" alt="Bethany" />
+        <img class="img3" src="/uwu3/images/bethanylogo.png" alt="logo" />
+        <p class="betha">Bethany in her pie shop</p>
+        <a href="https://xovnex.github.io/uwu1/carrito2.html">Link de otra página</a>
+        <h2>Our history</h2>
+        <p>
+          For many years, <strong>Bethany</strong> has been baking the most delicious pies at her home.
+          In 2013, we opened <br>our first store in Brussels (Belgium) in a cozy little street near the Grand Market. 
+          People from all <br>over the world fell in love with the soft cakes, heavenly cheese cakes, spicy apple pies... 
+          The store<br> became a success in no time.<br/>
+          In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger building. 
+          After receiving many requests, it became clear that our next step was making it possible to order pies from 
+          the comfort of your own home and from anywhere in the world. You are now looking at the result of this: 
+          our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like it!
+        </p>
+
+        <p>
+          Bethany is famous for using only the best ingredients. This way, we can make sure that our pies are absolutely the best.
+        </p>
+
+        <h3>Our weekly promotions</h3>
+        <h4>Cheese cake</h4>
+        <p>$12.95 - serves 4</p>
+        <img class="img2" src="/uwu3/images/products/cheesecakesmall.jpg" alt="cake" />
+      </article>
+    </div>
+
+    <div class="rectangulo"></div>
+    <img class="img4" src="/uwu3/images/pie.png" alt="pie" />
+
+    <aside>
+      <header class="ñam"><strong>Busque nuestros pies</strong></header>
+      <input class="busqueda" type="search" placeholder="Search en la tienda" />
+    </aside>
+
+    <footer>
+      <p>Nuestra dirección <address>Av La Fontana S/N - La Molina</address></p>
+      <small>2024 Fundamentos de diseño web - All Rights Reserved</small>
+    </footer>
+  </body>
+</html>
